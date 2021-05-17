@@ -65,6 +65,7 @@ main article header h1{
 .section-imagenes{
     display: flex;
     justify-content: space-evenly;
+    
 }
 .section-imagenes img{
     width: 30%;
@@ -77,9 +78,58 @@ main article header h1{
     font-size: 2vw;
     text-align: center;
     padding: 5px 5px 5px 5px;
+    margin-bottom: 60px;
 }
 #empresa-somos-name{
     font-style: oblique;
+}
+.somos ul{
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    flex-flow: column;
+   text-align: center;
+   align-items: center;
+}
+.box {
+    
+    border: 1px solid #ddd;
+    margin: 15px;
+    width: 50%;
+    
+}
+.productos header p{
+    text-align: center;
+    font-size: 2vw;
+
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+.row h3{
+    text-align: center;
+    font-size: 2vw;
+}
+.row p{
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5vw;
+}
+.row .section-imagenes img{
+    width: 50%;
+    height: 150px;
+}
+.btn{
+    background-color: black;
+    padding: 15px;
+    color: white;
+    border-radius: 4px;
+    
+}
+.btn:hover{
+    background-color: gray;
 }
 aside{
     grid-area: aside;
@@ -100,12 +150,18 @@ footer{
     grid-area: footer;
     background-color: gray;
 }
+footer a{
+    color: white;
+}
 .menu-footer{
     display: flex;
     flex-flow: row nowrap;
     list-style: none;
     justify-content: space-around;
-    background-color: gray;
+    
 
     padding-left: 0;
+}
+.last-footer{
+   text-align: center;
 }

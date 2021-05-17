@@ -7,6 +7,74 @@
 
 
 {% block main %}
+{% load static %}
+
+<article class="productos">
+    <header>
+        <h1>
+            Productos
+        </h1>
+        <p>En nuestras sucursales encontrarás gran variedad de productos para tu oficina.</p>
+    </header>
+    <section class="row">
+        <section>
+            <h3>Estanterias</h3>
+            <section class="section-imagenes">
+                <img src="{% static 'img/estanteria-productos.jpg' %}" alt="">
+            </section>
+            <p>
+                Las estanterías mas resistentes de
+                <br>todo el mercado nacional y extranjero.
+            </p>
+        </section>
+        <section>
+            
+            <h3>Muebles para oficina</h3>
+            <section class="section-imagenes">
+                <img src="{% static 'img/muebles-productos.jpg' %}" alt="">
+            </section>
+            <p>
+               Los muebles con la mejor madera de México.
+            </p>
+        </section>
+    </section>
+    <section class="row">
+        <section>
+            <h3>Lockers</h3>
+            <section class="section-imagenes">
+                <img src="{% static 'img/lockers-productos.jpg' %}" alt="">
+            </section>
+            <p>
+                !Estos no se oxidan¡ Los Lockers mas resistentes del mercado, con acero inoxidable, al mejor precio.
+            </p>
+        </section>
+        <section>
+            <h3>Cajas Plásticas</h3>
+            <section class="section-imagenes">
+                <img src="{% static 'img/caja-oficina.jpg' %}" alt="">
+            </section>
+            <p>
+                ¡Las cajas que si puedes apilar y no se maltratan!...
+                Guarda tus archivo viejo en las cajas plásticas más resistentes del mercado.
+            </p>
+        </section>
+        
+       
+    </section>
+    <section class="row">
+        <p>
+            <mark><strong>Haz tu pedido al 8126415300</strong></mark>
+        </p>
+    </section>
+    <section class="row">
+        <a class="btn" href="{% url 'sucursales' %}">
+            ¡Visitanos!
+        </a>
+    </section>
+        
+    </section>
+</article>
+
 
 {% endblock main %}
 
