@@ -1,4 +1,3 @@
-
 {% extends 'base/base.html' %}
 
 {% block title %}HOME{% endblock title %}
@@ -8,10 +7,51 @@
 
 
 {% block main %}
-<h1>Estanterias Good Office</h1>
-<section>
-    Donde tu dinero si rinde
-</section>
+{% load static %}
+<article>
+    <header>
+        <h1>Good Office</h1>
+    </header>
+    <section class="section-home">
+    
+        <section class="section-imagenes">
+            <img src="{% static 'img/estanteria_banner.jpg' %}" alt="">
+            <img src="{% static 'img/oficina_home.jpg' %}" alt="">
+        </section>
+        
+
+        <p>
+            Empresa dedicada al rubro de la fabricacion y venta de:
+            
+        </p>
+        <ul>
+            <li>
+                Estanterias
+            </li>
+            <li>
+                Muebles para oficina
+            </li>
+            <li>
+                Cajas plasticas
+            </li>
+            <li>
+                Lockers
+            </li>
+        </ul>
+    </section>
+    <section class="section-home">
+       <p>
+        Los mejores productos con los mejores precios.
+
+       </p>
+       <p>
+            <strong> Mas de 100 años en el rubro</strong>
+       </p>
+       
+
+    </section>
+</article>
+
 
 
 
@@ -19,8 +59,3 @@
 
 
 
-{% block footer %}
-
-    
-
-{% endblock footer %}

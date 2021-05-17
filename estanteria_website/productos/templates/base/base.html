@@ -1,10 +1,11 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <title>{% block title %} {% endblock title %}</title>
 </head>
@@ -38,9 +39,24 @@
         {% endblock main %}
     </main>
     <aside>
-        {% block aside %}
-
-        {% endblock aside %}
+        <section>
+            <h3>
+                ¡Aprovecha nuestras oferas!
+            </h3>
+        </section>
+        <section>
+            
+            <img src="{% static 'img/silla_oficina.jpg' %}" alt="">
+            <p>
+                Silla de oficina $100
+            </p>
+        </section>
+        <section>
+            <img src="{% static 'img/estanteria_oficina.jpg' %}" alt="">
+            <p>
+                Estanteria de oficina $100
+            </p>
+        </section>
     </aside>
     <footer>
         <ul class="menu-footer">
@@ -49,6 +65,9 @@
             </li>
             <li>
                 Contactar al desarrollador
+            </li>
+            <li>
+                <a href="{% url 'sucursales' %}">Sucursales</a>
             </li>
         </ul>
     </footer>

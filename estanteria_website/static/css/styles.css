@@ -1,8 +1,15 @@
+a{
+    text-decoration: none;
+}
 body{
+    background-color: #ccc;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: grid;
+    grid-template-columns: 6fr 2fr;
     grid-template-areas: "header header"
                         "main aside"
                         "footer footer";
+    gap:10px;
 }
 
 header
@@ -16,7 +23,7 @@ header
     list-style: none;
     justify-content: space-around;
     background-color: rgb(67, 82, 128);
-    margin: 0;
+    margin: 0 0;
     padding-left: 0;
     
 }
@@ -39,11 +46,55 @@ header
 main
 {
     grid-area: main ;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+main article header h1{
+    text-align: center;
+    font-size: 3vw;
+}
+.section-home{
     
+    text-align: center;
+    font-size: 1.5vw;
+}
+.section-home ul{
+    list-style: none;
+}
+.section-imagenes{
+    display: flex;
+    justify-content: space-evenly;
+}
+.section-imagenes img{
+    width: 30%;
+}
+.nosotros header h1{
+    font-size: 3vw;
+
+}
+.section-text-nosotros{
+    font-size: 2vw;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+#empresa-somos-name{
+    font-style: oblique;
 }
 aside{
     grid-area: aside;
-   
+    background-color: white;
+    border: 1px solid #ddd;
+}
+aside section {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-flow: column;
+}
+aside section img{
+    width: 50%;
+    
 }
 footer{
     grid-area: footer;
@@ -55,6 +106,6 @@ footer{
     list-style: none;
     justify-content: space-around;
     background-color: gray;
-    margin: 0;
+
     padding-left: 0;
 }

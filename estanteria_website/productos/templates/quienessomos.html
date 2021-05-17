@@ -8,25 +8,29 @@
 
 {% block main %}
 
-
-<h1>
-    Quienes somos
-</h1>
-
+{%load static %}
+<article class="nosotros">
+    <header>
+        <h1>¿Quienes Somos Nosotros Good Office?</h1>
+    </header>
+    <section class="section-text-nosotros">
+        <p>
+            <span id="empresa-somos-name"><strong>Good Office</strong> </span> es una empresa 100% Mexicana, fundada en el año de 1910.
+            Nuestra primera incursión en este mundo de la fabricación, fue en el area de muebles 
+            para oficinas del gobierno del entonces año, desde entonces, nos hemos seguido innovando, para ofrecerle a nuestros clientes
+            los mejores productos al mejor precio.
+        </p>
+        <section class="section-imagenes">
+            <img src="{% static 'img/fabrica.jpg' %}" alt="">
+            <img src="{% static 'img/fabrica-2.jpg' %}" alt="">
+            
+            
+        </section>
+    </section>
+</article>
 
 
 {% endblock main %}
 
 
-{% block aside %}
 
-
-
-{% endblock aside %}
-
-
-
-
-{% block footer %}
-
-{% endblock footer %}
